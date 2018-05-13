@@ -102,20 +102,25 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="X&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="用例子解释 什么是 最小二乘法  人们会选择距离最进行的线? 引入 线性回归  概念  介绍 多元线性回归  多项式回归 损失函数 J(thta)  y = x 为例 一元 抛物线  二元 等高线  多元变量回归的损失函数 梯度下降   随机梯度下降   为啥 前面 添加 二分之一  m分之一    极值点  一定是最优解吗？ 归一化 作用 重新强调  快速收敛 学习率（步长）  不能过高 不要">
+<meta name="keywords" content="Linear Regression">
+<meta property="og:type" content="article">
+<meta property="og:title" content="线性回归分享KeyWord">
+<meta property="og:url" content="http://yoursite.com/2018/05/10/KeyWord/index.html">
 <meta property="og:site_name" content="X&#39;s Blog">
+<meta property="og:description" content="用例子解释 什么是 最小二乘法  人们会选择距离最进行的线? 引入 线性回归  概念  介绍 多元线性回归  多项式回归 损失函数 J(thta)  y = x 为例 一元 抛物线  二元 等高线  多元变量回归的损失函数 梯度下降   随机梯度下降   为啥 前面 添加 二分之一  m分之一    极值点  一定是最优解吗？ 归一化 作用 重新强调  快速收敛 学习率（步长）  不能过高 不要">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-05-13T13:34:29.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="X&#39;s Blog">
+<meta name="twitter:title" content="线性回归分享KeyWord">
+<meta name="twitter:description" content="用例子解释 什么是 最小二乘法  人们会选择距离最进行的线? 引入 线性回归  概念  介绍 多元线性回归  多项式回归 损失函数 J(thta)  y = x 为例 一元 抛物线  二元 等高线  多元变量回归的损失函数 梯度下降   随机梯度下降   为啥 前面 添加 二分之一  m分之一    极值点  一定是最优解吗？ 归一化 作用 重新强调  快速收敛 学习率（步长）  不能过高 不要">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/10/KeyWord/"/>
 
 
 
@@ -125,7 +130,7 @@
   };
 </script>
 
-  <title>X's Blog</title>
+  <title>线性回归分享KeyWord | X's Blog</title>
   
 
 
@@ -172,8 +177,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-right 
-  page-home">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -213,7 +217,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
     <a href="/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
   </li>
@@ -281,9 +285,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -315,11 +319,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/10/KeyWord/" itemprop="url">
-                  线性回归分享KeyWord
-                </a>
+          <h1 class="post-title" itemprop="name headline">线性回归分享KeyWord
               
             
           </h1>
@@ -412,9 +412,7 @@
       
 
       
-        
-          
-            <ol>
+        <ol>
 <li>用例子解释 什么是 最小二乘法  人们会选择距离最进行的线?</li>
 <li>引入 线性回归  概念  介绍 多元线性回归  多项式回归</li>
 <li>损失函数 J(thta)  y = x 为例 一元 抛物线  二元 等高线  多元变量回归的损失函数</li>
@@ -439,8 +437,6 @@
 <p>所以过拟合有两种原因：<br>训练集和测试机特征分布不一致（白天鹅黑天鹅）<br>或者模型太过复杂（记住了每道题）而样本量不足</p>
 <p>过拟合(over-fitting)指的是你建模的时候用了过多的参数，一般地，我们建模的时候要让参数个数尽可能的少。然后，只要你的模型参数有很多，做出来的R平方也可以很好看。所以，为了避免这种情况，就有了Akaike information criterion和Bayesian information criterion等判定准则，大致原理是你用的参数越少，这个值则越小，模型越棒。多重共线性(multicollinearity)指的是你建模的时候，解释变量之间有高度相关性。这种情况的表现就是：你在做test statistics时候，单个解释变量不显著，整体确实显著的。这样一一来你的模型的参数估计是没有意义。所以，我们经常要判断这种关系存不存在，有的方法主流的就是首先在variable selection用stepwise regression把这种关系先杜绝掉，或者是VIF来判断，方差膨胀因子表达式为：VIF_i=1/（1-R_i^2)。其中Ri为自变量xi对其余自变量作回归分析的复相关系数。当VIF_i很大时，表明自变量间存在多重共线性。一般大于10就说有多重共线性存在。</p>
 
-          
-        
       
     </div>
 
@@ -458,158 +454,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/07/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="X">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="X's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/07/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2018-05-07 21:01:28" itemprop="dateCreated datePublished" datetime="2018-05-07T21:01:28+08:00">2018-05-07</time>
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/Linear-Regression/" rel="tag"># Linear Regression</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/07/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -619,14 +493,19 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -867,6 +746,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.2.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.2.0"></script>
+
+
 
   
 
