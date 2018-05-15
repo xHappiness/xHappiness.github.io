@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>X&#39;s Blog</title>
+  
+  <subtitle>诚敬·沉浸·澈己</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-05-15T05:21:09.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>X</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>线性回归分享KeyWord</title>
+    <link href="http://yoursite.com/2018/05/10/KeyWord/"/>
+    <id>http://yoursite.com/2018/05/10/KeyWord/</id>
+    <published>2018-05-10T15:48:19.000Z</published>
+    <updated>2018-05-15T05:21:09.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ol&gt;
+&lt;li&gt;用例子解释 什么是 最小二乘法  人们会选择距离最进行的线?&lt;/li&gt;
+&lt;li&gt;引入 线性回归  概念  介绍 多元线性回归  多项式回归&lt;/li&gt;
+&lt;li&gt;损失函数 J(thta)  y = x 为例 一元 抛物线  二元 等高线  多元变量回归的损失函数&lt;/
+      
+    
+    </summary>
+    
+      <category term="Machine Learning" scheme="http://yoursite.com/categories/Machine-Learning/"/>
+    
+    
+      <category term="Linear Regression" scheme="http://yoursite.com/tags/Linear-Regression/"/>
+    
+  </entry>
+  
+</feed>
