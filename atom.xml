@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-15T05:49:17.000Z</updated>
+  <updated>2018-06-08T07:08:16.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,28 +17,51 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>线性回归分享KeyWord</title>
-    <link href="http://yoursite.com/2018/05/10/KeyWord/"/>
-    <id>http://yoursite.com/2018/05/10/KeyWord/</id>
-    <published>2018-05-10T15:48:19.000Z</published>
-    <updated>2018-05-15T05:49:17.000Z</updated>
+    <title>科学上网--每月5$的VPS</title>
+    <link href="http://yoursite.com/2018/05/28/SomethingAmazoning/FQ-0/"/>
+    <id>http://yoursite.com/2018/05/28/SomethingAmazoning/FQ-0/</id>
+    <published>2018-05-28T12:32:15.000Z</published>
+    <updated>2018-06-08T07:08:16.000Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;ol&gt;
-&lt;li&gt;用例子解释 什么是 最小二乘法  人们会选择距离最进行的线?&lt;/li&gt;
-&lt;li&gt;引入 线性回归  概念  介绍 多元线性回归  多项式回归&lt;/li&gt;
-&lt;li&gt;损失函数 J(thta)  y = x 为例 一元 抛物线  二元 等高线  多元变量回归的损失函数&lt;/
+        &lt;h1 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;PayPal 账户&lt;/li&gt;
+&lt;li&gt;DigtialOcean(通过&lt;a href=&quot;https://m.do.
       
     
     </summary>
     
-      <category term="Machine Learning" scheme="http://yoursite.com/categories/Machine-Learning/"/>
+      <category term="神奇那些事儿" scheme="http://yoursite.com/categories/%E7%A5%9E%E5%A5%87%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
     
     
-      <category term="Linear Regression" scheme="http://yoursite.com/tags/Linear-Regression/"/>
+      <category term="FQ" scheme="http://yoursite.com/tags/FQ/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>科学上网--搭建属于自己的FQ代理</title>
+    <link href="http://yoursite.com/2018/05/21/SomethingAmazoning/FQ-1/"/>
+    <id>http://yoursite.com/2018/05/21/SomethingAmazoning/FQ-1/</id>
+    <published>2018-05-20T17:23:06.000Z</published>
+    <updated>2018-06-08T07:16:04.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;VPS(若没有，可使用详见&lt;a href=&quot;https://xhappiness.github.io/20
+      
+    
+    </summary>
+    
+      <category term="神奇那些事儿" scheme="http://yoursite.com/categories/%E7%A5%9E%E5%A5%87%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
+    
+    
+      <category term="FQ" scheme="http://yoursite.com/tags/FQ/"/>
     
   </entry>
   
